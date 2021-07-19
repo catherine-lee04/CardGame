@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CardGame</string>
+
+    <string name="main_start">Start</string>
+    <string name="main_type_44">4 X 4</string>
+    <string name="main_type_56">5 X 6</string>
+    <string name="main_type_67">6 X 7</string>
+
+    <string name="play_try_count">시도 횟수</string>
+    <string name="play_all_matched">성공성공 쨕쨕쨕쨕!</string>
+
+    <string name="alert_ok">확인</string>
+</resources>

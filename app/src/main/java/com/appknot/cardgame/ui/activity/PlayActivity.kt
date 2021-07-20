@@ -36,6 +36,7 @@ class PlayActivity : BaseActivity<ActivityPlayBinding, PlayViewModel>() {
         }
 
         viewModel.matchedCount.observe(this@PlayActivity, Observer {
+            // 모든 카드를 맞춘 경우
             if (it >= (columns * rows / 2)) {
                 AlertDialog.Builder(this@PlayActivity)
                     .setMessage(getString(R.string.play_all_matched))

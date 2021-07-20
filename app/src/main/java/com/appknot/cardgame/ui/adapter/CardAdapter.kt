@@ -56,7 +56,7 @@ class CardAdapter(
             }
 
             itemView.setOnClickListener {
-                if (bind.ivCard.alpha > 0f && lastOpened != position) {
+                if (bind.ivCard.alpha >= 1f && lastOpened != position) {
                     // 2개 이상 선택하지 못하도록 방지
                     if (isOpened.keys.size < 2) {
                         isOpened[position] = items[position]
@@ -77,7 +77,7 @@ class CardAdapter(
                                     // 맞춘 횟수 증가
                                     matchedAction.invoke()
                                 }
-                            }, 700)
+                            }, 500)
                         } else {
                             lastOpened = position
                         }
